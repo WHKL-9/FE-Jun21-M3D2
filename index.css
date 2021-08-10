@@ -1,0 +1,22 @@
+.music_container {
+    position: relative;
+}
+
+.music_container .fa-play{
+    position: absolute;
+    right: 7px;
+    vertical-align: middle;
+}
+
+.playlist_button{
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.countSongs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+

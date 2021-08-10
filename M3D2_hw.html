@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <!-- saved from url=(0436)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/731332185723374.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RCEE6YREN%2F20210810%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210810T101003Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27M3-D2.html&X-Amz-Signature=89285d35c694ff087f32e5ce90107ee4a0ddd0ca0c60cba1f40005f556173b90 -->
-<html data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script id="contentscript-data-transport" data-data-quality-active="true" data-snapaddy-updater_account="Update account" data-snapaddy-updater_contact="Update contact" data-snapaddy-updater_create_contact="Create new contact" data-snapaddy-updater_contact_description="" data-snapaddy-updater_lead="Update lead" data-snapaddy-updater_organization="Update organisation" data-snapaddy-updater_organization_description="" data-snapaddy-updater_deal="Update contact &amp; organization" data-snapaddy-updater_deal_description="" data-snapaddy-updater_sap_lead="Update lead" data-snapaddy-updater_sap_contact="Update contact" data-snapaddy-updater_create_sap_contact="Create new contact" data-snapaddy-updater_sap_account="Update customer" data-snapaddy-updater_transfer="Transfer"></script></head>
+<html data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
   <body data-new-gr-c-s-check-loaded="14.1025.0" data-gr-ext-installed="" cz-shortcut-listen="true">
-    <h1>Start from your previous Spotify Exercise.</h1>
 
-    <p>
-      The goal of this exercise is to fetch data from the API instead of having
-      them "wired up" in the page.
-    </p>
+    <div class="container music_container my-5">
+      <button type="button" class="btn btn-success playlist_button" onclick="fetchMusic()">Load Songs</button>
+      <div class="card">
+        <ul class="list-group list-group-flush">
+        </ul>
+      </div>
 
-    <p>Generate automatically 3 lists based on the "search API" response</p>
-    <ul>
-      <li>es.: https://deezerdevs-deezer.p.rapidapi<font class="pearl-hilighted-word" style="color: black; background: rgb(255, 255, 102);">.com</font>/search?q=eminem</li>
-      <li>es.: https://deezerdevs-deezer.p.rapidapi<font class="pearl-hilighted-word" style="color: black; background: rgb(255, 255, 102);">.com</font>/search?q=metallica</li>
-      <li>es.: https://deezerdevs-deezer.p.rapidapi<font class="pearl-hilighted-word" style="color: black; background: rgb(255, 255, 102);">.com</font>/search?q=behemoth</li>
-    </ul>
+      <div class="countSongs my-3">
+        <button type="button" class="btn btn-dark mr-3" onclick="countSongs()">Number of Songs: </button>
+        <input class="btn btn-primary countSongButton" type="button" value="0">
+      </div>
+    </div>
 
-    <h3>
-      Load them during page load, and create the collections based on the API
-      response.
-    </h3>
-
-    <h4>
-      Make the central part of the page scrollable both horizontally and
-      vertically
-    </h4>
-
-    <h4>
-      Add a "List albums" button. When pressed, he should create and display a
-      list of albums on the page
-    </h4>
-
-    <h4>
-      Add a "Count Unique" button. When pressed, he should log the number of
-      unique albums on the page
-    </h4>
+    
   
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
